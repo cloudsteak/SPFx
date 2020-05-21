@@ -1,6 +1,10 @@
 ## multiple-lists-spfx
 
-This is where you include your WebPart documentation.
+Create multiple list with lookup
+
+### Detailed desctiotion about this solution
+
+[Create multiple lists from SharePoint Framework app](https://cloudsteak.com/create-multiple-lists-from-sharepoint-framework-app)
 
 ### Building the code
 
@@ -24,3 +28,4 @@ gulp test - TODO
 gulp serve - TODO
 gulp bundle - TODO
 gulp package-solution - TODO
+
