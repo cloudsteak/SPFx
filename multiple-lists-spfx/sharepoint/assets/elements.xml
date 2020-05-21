@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <!-- IsActive global field -->
+    <Field ID="{9b9df7c1-8dca-4954-90c1-8dcf131e30af}" Name="IsItActive" DisplayName="Active" Type="Boolean" Required="FALSE" Group="CloudSteak Columns" />
+    <!-- Content type for Secondary list -->
+    <ContentType ID="0x010036ee6af136ed47a48c82fb0916a627ba" Name="SecondaryCT" Group="CloudSteak Content Types" Description="Sample content types from web part solution">
+        <FieldRefs>
+            <FieldRef ID="{9b9df7c1-8dca-4954-90c1-8dcf131e30af}" />
+        </FieldRefs>
+    </ContentType>
+    <!-- Secondary list -->
+    <ListInstance CustomSchema="secondarySchema.xml" FeatureId="00bfea71-de22-43b2-a848-c05709900100" Title="Secondary" Description="Secondary List" TemplateType="100" Url="Lists/Secondary">
+    </ListInstance>
+    <!-- Lookup field for Secondary list -->
+    <Field ID="{B2C98746-DE9D-4878-90C1-D3749881790F}" Name="SecondaryLookup" DisplayName="Secondary" Type="Lookup" ShowField="Title" List="Lists/Secondary" Required="TRUE" Group="CloudSteak Columns" />
+
+    <!-- Content type for Primary lists -->
+    <ContentType ID="0x010042D013E716C0B03B457EB2E6699537B99CFE" Name="PrimaryCT" Group="CloudSteak Content Types" Description="Sample content types from web part solution">
+        <FieldRefs>
+            <FieldRef ID="{B2C98746-DE9D-4878-90C1-D3749881790F}" />
+        </FieldRefs>
+    </ContentType>
+
+    <!-- Primary list -->
+    <ListInstance CustomSchema="primarySchema.xml" FeatureId="00bfea71-de22-43b2-a848-c05709900100" Title="Primary" Description="Primary List" TemplateType="100" Url="Lists/Primary">
+    </ListInstance>
+</Elements>

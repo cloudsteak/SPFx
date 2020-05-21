@@ -1,0 +1,30 @@
+{
+    "$schema":  "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution":  {
+                     "name":  "multiple-lists-spfx-client-side-solution",
+                     "id":  "49ddb27b-ee77-410a-84af-292bb33d664b",
+                     "version":  "1.0.0.1",
+                     "includeClientSideAssets":  true,
+                     "isDomainIsolated":  false,
+                     "features":  [
+                                      {
+                                          "title":  "Create lists for CloudSteak solution",
+                                          "description":  "Lists builder",
+                                          "id":  "0bc610db-74ec-40c4-a867-1108fdf2b5f0",
+                                          "version":  "1.0.0.0",
+                                          "assets":  {
+                                                         "elementManifests":  [
+                                                                                  "elements.xml"
+                                                                              ],
+                                                         "elementFiles":  [
+                                                                              "primarySchema.xml",
+                                                                              "secondarySchema.xml"
+                                                                          ]
+                                                     }
+                                      }
+                                  ]
+                 },
+    "paths":  {
+                  "zippedPackage":  "solution/multiple-lists-spfx.sppkg"
+              }
+}

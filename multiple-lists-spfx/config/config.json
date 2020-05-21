@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "multiple-lists-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/multipleLists/MultipleListsWebPart.js",
+          "manifest": "./src/webparts/multipleLists/MultipleListsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MultipleListsWebPartStrings": "lib/webparts/multipleLists/loc/{locale}.js"
+  }
+}
